@@ -10,4 +10,7 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
     }
+    public void show2(){
+        int i = 1 + 2;
+    }
 }
