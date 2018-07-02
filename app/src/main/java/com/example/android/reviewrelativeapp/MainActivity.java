@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
         TextView textViewHello = (TextView) findViewById(R.id.hello_text_view);
         textViewHello.setText("Hello I am Ali");
         Intent i = new Intent(this,InfoActivity.class);
+        show();
         startActivity(i);
+    }
+    public void show(){
+        Toast.makeText(this,"Hi",Toast.LENGTH_LONG).show();
     }
 }
