@@ -19,10 +19,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textViewHello = (TextView) findViewById(R.id.hello_text_view);
         textViewHello.setText("Hello I am Ali");
         Intent i = new Intent(this,InfoActivity.class);
-        show();
         startActivity(i);
     }
-    public void show(){
-        Toast.makeText(this,"Hi",Toast.LENGTH_LONG).show();
-    }
+    
 }
